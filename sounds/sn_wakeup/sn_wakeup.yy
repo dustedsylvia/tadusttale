@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sn_wakeup",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.0725625,
+  "exportDir":"",
+  "name":"sn_wakeup",
+  "parent":{
+    "name":"welcometoanunderground",
+    "path":"folders/Sounds/welcometoanunderground.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"sn_wakeup.wav",
+  "volume":1.0,
+}

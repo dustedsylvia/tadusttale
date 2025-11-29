@@ -1,0 +1,22 @@
+UNDERTALE by Toby Fox and Temmie Chang
+UNDERSWAP by popcornpr1nce
+DUSTTALE by ask-dusttale
+SWAPDUST by JJ Curly
+
+[object]screenshaker and [script]screenshake from https://gamemaker.io/en/tutorials/coffee-break-tutorials-juicy-screenshake-gml
+[script]hextoclr from https://forum.gamemaker.io/index.php?threads/is-it-possible-to-get-color-code-from-string.113290/
+modified falling sound from DELTARUNE (snd_closet_fall)
+Chara/Frisk sprawl sprites by Team Switched
+Sprites originally by Toby Fox/Temmie Chang/from Undertale:
+ - EVERY SINGLE sprite excluding:
+    collisionspr
+	s_UNDERSWAP
+	s_dashes
+	s_presszorenter
+	s_fader
+	s_charasprawl
+	s_frisksprawl
+	s_asterisk
+Sounds originally by Toby Fox:
+ - all of them.
+water.mp4 was made in Adobe After Effects
