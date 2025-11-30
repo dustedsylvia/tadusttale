@@ -1,3 +1,9 @@
+// yes these 3 lines were "borrowed" from JBE
+// since i wrote it i don't think it's immoral though
+game_set_speed(30, gamespeed_fps);
+display_reset(display_aa, false);
+randomize();
+
 global.player_name = environment_get_variable("username");
 global.player_lv = 1;
 global.player_hp = 20;
@@ -9,7 +15,6 @@ global.minutes = 0;
 global.prevminutes = 0;
 global.seconds = 0;
 global.prevseconds = 0;
-
 
 timer = 0;
 

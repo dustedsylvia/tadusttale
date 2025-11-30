@@ -1,9 +1,3 @@
-// yes these 3 lines were "borrowed" from JBE
-// since i wrote it i don't think it's immoral though
-game_set_speed(30, gamespeed_fps);
-display_reset(display_aa, false);
-randomize();
-
 clock = 0;
 
 state = 1;

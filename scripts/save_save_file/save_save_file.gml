@@ -21,6 +21,7 @@ function save_save_file(ini_filepath) {
 	
 	// For ini_file_exists
 	ini_write_real("misc", "file_exists", 1);
+	ini_write_real("misc", "wtau_cutscene_finished", global.wtau_cutscene_finished);
 	
 	ini_close();
 	

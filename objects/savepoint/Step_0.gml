@@ -13,8 +13,8 @@ var confirm = (key_z or key_enter);
 // that savepoint will have to see if the player is within a certain
 // radius every frame instead of doing the easy thing and just
 // checking the collisions.
-if (confirm and state == 0) {
-//if (place_meeting(x, y, player) and confirm and state == 0) {
+//if (confirm and state == 0) {
+if (place_meeting(x, y, playerinteract) and confirm and state == 0) {
 	global.can_move = false;
 	textbox = instance_create_depth(0, 0, -9998, flavorer);
 	textbox.text = ["* The sight of the empty\nvoid fills you with\n[color:#FF0000]DETERMINATION[color:#FFFFFF]."];

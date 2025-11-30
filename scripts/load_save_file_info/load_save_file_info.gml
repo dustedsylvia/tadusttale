@@ -22,6 +22,9 @@ function load_save_file_info(ini_filepath) {
 	global.minutes = ini_read_real("savepoint", "minutes", -1997);
 	global.seconds = ini_read_real("savepoint", "seconds", -1997);
 	
+	global.wtau_cutscene_finished = ini_read_real("misc", "wtau_cutscene_finished", -1997);
+	//show_error(global.wtau_cutscene_finished, true);
+	
 	global.prevminutes = global.minutes;
 	global.prevseconds = global.seconds;
 	
@@ -30,7 +33,7 @@ function load_save_file_info(ini_filepath) {
 	if (array_contains([global.player_name, global.weapon, global.armor, global.savepoint], "error_nodata")) {
 		room_goto(room_dogcheck);
 	}
-	if (array_contains([global.player_lv, global.player_hp, global.player_mode, global.minutes, global.seconds], -1997)) {
+	if (array_contains([global.player_lv, global.player_hp, global.player_mode, global.minutes, global.seconds, global.wtau_cutscene_finished], -1997)) {
 		room_goto(room_dogcheck);
 	}
 	

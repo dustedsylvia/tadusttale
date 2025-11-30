@@ -16,5 +16,15 @@ function load_save_file(ini_filepath) {
 			instance_create_depth(376, 256, -9998, player);
 			room_goto(room_test);
 		break;
+		
+		case "big test room":
+			instance_create_depth(377, 257, -9998, player);
+			room_goto(room_bigtest);
+		break;
+		
+		case "cool creative savepoint name":
+			instance_create_depth(175, 130, -9998, player);
+			room_goto(room_welcometoanunderground);
+		break;
 	}
 }

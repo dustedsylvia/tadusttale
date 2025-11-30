@@ -1,0 +1,1 @@
+draw_sprite_ext(cover, 0, -100, -100, 1000, 1000, 0, c_white, opacity);

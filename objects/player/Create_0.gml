@@ -23,8 +23,6 @@ if (!variable_global_exists("player_initialized")) {
 	
 	global.player_atk = (-2 + (2 * global.player_lv)) + global.weapon_atk;
 	global.player_def = ((global.player_lv - 1) / 4) + global.armor_def;
-	global.player_x = x;
-	global.player_y = y;
 	global.player_speed = 5;
 	global.player_x1speed = global.player_speed;
 	global.player_x2speed = global.player_speed;
@@ -32,6 +30,9 @@ if (!variable_global_exists("player_initialized")) {
 	global.player_y2speed = global.player_speed;
 	global.player_mode = 1; // 1 for Chara and 2 for Frisk
 }
+
+global.player_x = x;
+global.player_y = y;
 
 image_speed = 0;
 image_xscale = 2;
@@ -51,6 +52,17 @@ solidObjects = [playercollision, savepoint];
 
 lastmode = 1;
 
+player_int = noone;
+
+prevx = x;
+prevy = y;
+
+movedlastframe = false;
+
+camera = noone;
+camera_x = 0;
+camera_y = 0;
+
 colliding = function(playerx=x, playery=y) {
 	for (var i = 0; i < array_length(solidObjects); i++) {
 		if (place_meeting(playerx, playery, solidObjects[i])) {
@@ -60,3 +72,5 @@ colliding = function(playerx=x, playery=y) {
 	
 	return false;
 }
+
+show_debug_message("i have been     created");

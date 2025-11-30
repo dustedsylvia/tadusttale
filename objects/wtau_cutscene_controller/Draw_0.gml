@@ -1,4 +1,4 @@
-if (state == 1) {
+if (state == 1 or state == 2) {
 	draw_sprite_ext(frisk_s, frisk_subimg, frisk_x + frisk_x_offset, frisk_y, 2, 2, 0, c_white, 1);
 	draw_sprite_ext(chara_s, chara_subimg, chara_x + chara_x_offset, chara_y, 2, 2, 0, c_white, 1);
 }
